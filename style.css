@@ -1,150 +1,137 @@
 * {
+  font-family: "Segoe UI";
+  color: white;
+}
+
+body {
+  background: black;
   margin: 0;
 }
-.navigation {
-  background-color: rgb(0, 0, 0);
-  padding: 15px;
-  height: 10%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+.Page {
+  background-color: black;
+  background-image: url(/yudhirPortfolio/photos/cup-2619216_1920.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow-y: scroll;
+}
+
+.navbarContainer {
+  padding: 20px;
 }
 
 .logo {
-  font-size: xx-large;
-  color: #ffffff;
+  width: 80px;
 }
-.sublogo {
-  font-size: 20px;
-}
-a {
-  font-size: 24px;
-  color: #ffffff;
-  text-decoration: none;
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .navigations {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  gap: 100px;
   list-style: none;
-}
-.imageBoard {
-  height: 140vh;
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(255, 255, 255);
-}
-.topPart {
-  height: 70%;
-  background-color: bisque;
   display: flex;
   flex-direction: row;
+  gap: 100px;
+  margin-right: 100px;
 }
-.sectionLeft {
-  background-image: url(./pic1Top.jpg);
-  background-position: center;
-  background-size: cover;
-  padding: 50px;
-  font-size: 80px;
-  background-color: cadetblue;
-  flex: 2;
-  transition: transform 1s ease;
-}
-.sectionLeft:hover {
-  transform: scale(1.06);
-}
-.percentage {
-  font-size: 120px;
-}
-.shop {
-  padding: 10px;
-  border-style: solid;
-  font-size: 50px;
-}
-.shop:hover {
-  transition: background-color 1s;
-  background-color: #ffffff;
-  border-style: hidden;
-}
-.sectionRight {
-  text-align: center;
 
-  background-image: url(./pic2.jpg);
-  background-position: center;
+.navigations a {
+  font-size: x-large;
+  text-decoration: none;
+}
 
-  background-size: cover;
-  background-color: turquoise;
-  flex: 1;
-  padding-top: 400px;
-  transition: transform 1s ease;
-}
-.sectionRight:hover {
-  transform: scale(1.06);
-}
-.premium {
-  padding: 10px;
-  background-color: rgba(253, 253, 253, 0.623);
-  font-size: 30px;
-  border-style: solid;
+.navigations a:hover {
+  border-bottom-style: solid;
   border-width: 2px;
-}
-.premium:hover {
-  background-color: rgba(241, 220, 25, 0.747);
-  transition: background-color 0.7s;
-}
-.LeftTop {
-  height: 100%;
-  width: 100%;
-  background-color: gray;
-}
-.topRight {
-  width: 100%;
-  height: 100%;
-  background-color: limegreen;
-}
-.topSellers {
-  font-size: 40px;
-  padding-left: 50px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: black;
-  color: #ffffff;
-}
-.bottomPart {
-  height: 40%;
-  display: flex;
-  justify-content: space-evenly;
-}
-.item1 {
-  flex: 1;
-  background-image: url(./squareImg.jpg);
-  background-position: center;
-  background-size: cover;
-}
-.item2 {
-  flex: 1;
-  background-image: url(./squareImg2.jpg);
-  background-position: center;
-  background-size: cover;
-}
-.item3 {
-  flex: 1;
-  background-image: url(./squareImg3.jpg);
-  background-position: center;
-  background-size: cover;
+  border-color: rgb(255, 0, 0);
+  color: rgb(255, 0, 0);
 }
 
-.item {
-  padding: 15px;
+.profile {
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+}
+
+.profilePicture {
+  height: 500px;
+  border-style: double;
+  border-width: 5px;
+  border-radius: 5px;
+}
+
+.name {
+  font-size: larger;
+  color: rgb(255, 0, 0);
+}
+
+.greet {
+  font-size: 40px;
+  color: antiquewhite;
+}
+
+.work {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+}
+
+.about {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 150px;
+}
+.aboutTitle {
+  font-size: 60px;
   text-align: center;
 }
-.itemTitle {
-  font-size: 23px;
-  background-color: #ffffffc5;
-  padding-left: 100px;
-  padding-right: 100px;
+.aboutMe {
+  padding-top: 60px;
+  color: rgb(255, 0, 0);
 }
-.itemTitle:hover {
-  background-color: #ffffff71;
+.col12 {
+  padding: 30px;
+  font-size: x-large;
+}
+.JSImg {
+  padding-top: 70px;
+  width: 200px;
+}
+.MLImg {
+  padding-top: 70px;
+
+  width: 200px;
+}
+
+.row1 {
+  display: flex;
+  justify-content: space-between;
+}
+.col22 {
+  margin: 0;
+}
+.contact {
+  margin-bottom: 200px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 150px;
+}
+.contactTitle {
+  font-size: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.contactMe {
+  color: red;
+  font-size: 40px;
+}
+.row2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.thank {
+  text-align: center;
 }

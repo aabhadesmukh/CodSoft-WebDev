@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Projects</title>
+    <link rel="stylesheet" href="projects.css" />
+    <script>
+      function toggleItem(element) {
+        const content = element.nextElementSibling;
+        content.classList.toggle("expanded");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="navbarContainer">
+      <nav>
+        <img
+          class="logo"
+          src="/yudhirPortfolio/photos/
+37801da14d144ad9b278b8a036f15ae1.png"
+        />
+        <ul class="navigations">
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./skills.html">SKILLS</a></li>
+          <li><a href="./resume.html">RESUME</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="title">
+        <span>A</span>ccomplished projects:
+      </div>
+      <div class="projectsList">
+        <div class="item">
+          <div class="hackday" onclick="toggleItem(this)">
+            COESIS Hackday 2022
+          </div>
+          <div class="content">
+            Made a Nepali online music streaming app using
+            HTML, CSS and JavaScript
+          </div>
+        </div>
+        <div class="item">
+          <div class="design" onclick="toggleItem(this)">
+            Design Competition
+          </div>
+          <div class="content">
+            Using Illustrator made a pomplet and banner
+            advertisement for a earpods company
+          </div>
+        </div>
+        <div class="item">
+          <div class="leapFrog" onclick="toggleItem(this)">
+            LeapFrog Challenge
+          </div>
+          <div class="content">
+            Completed 60 days Challenge from LeapFrog
+          </div>
+        </div>
+        <div class="item">
+          <div class="react" onclick="toggleItem(this)">
+            React Projects
+          </div>
+          <div class="content">
+            Made couple of them, checkout on GitHub
+          </div>
+        </div>
+      </div>
+      <div class="message">Click to expand</div>
+    </div>
+  </body>
+</html>
